@@ -76,7 +76,7 @@ The API returns an array of dict where each row is a measure and the dict has th
 
 ### Example of Usage
 
-`from pylacrossapi import lacrosse
+    `from pylacrossapi import lacrosse
 
     device_id = 02839203
     unit_measure = 1
@@ -87,6 +87,6 @@ The API returns an array of dict where each row is a measure and the dict has th
     #Returns the last three observation
 
     print obs[1]["ambient_temp"]
-    #Prints the second observation Temperature
+    #Prints the second observation Temperature`
 
 
