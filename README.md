@@ -48,10 +48,34 @@ Compatible with Python 2
     "75": 'Europe/Moscow', "90": 'Europe/Oslo', "21": 'Europe/Rome', "56": 'Europe/Vatican',
     "83": 'Europe/Warsaw', "61": 'Europe/Zurich', "101": 'IndiaStandardTime', "104": 'Pacific/Auckland'`
 
-`Example --> device1 = lacrosse(000000,1,37)`
+### Example
+
+` device_id = 02839203
+  unit_measure = 1
+  time_zone = 37
+  device1 = lacrosse(device_id,unit_measure,time_zone)`
 
 ### Get Observations
 
 `device1.getObservation(n)`
 
 Where n is the number of observations from the most recent one
+
+## Returned Dictionary
+
+The API returns an array of dict where each row is a measure and the dict has the following variables:
+
+- `linkquality`: It's the RF signal strength of the device to the hub
+- `lowbattery`: 0 or 1. It's a signal
+- `ambient_temp`: it is the temperature measure by the device in the unit specified
+- `humidity`: Percentage of the relative humidity
+- `utctime`: Time in UTC
+- `device_type`: returns the model
+- `timestamp`: returns the time of the observation on the specified timezone
+- `probe_temp`: if a probe is connected, returns the temperature measured
+
+### Example of Usage
+`obs=device1.getObservation(3)`
+`print obs[1]["ambien_temp]"`
+
+
