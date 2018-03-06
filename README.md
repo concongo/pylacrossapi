@@ -76,7 +76,7 @@ The API returns an array of dict where each row is a measure and the dict has th
 
 ### Example of Usage
 
-    `from pylacrossapi import lacrosse
+    from pylacrossapi import lacrosse
 
     device_id = 02839203
     unit_measure = 1
