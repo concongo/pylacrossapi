@@ -75,7 +75,18 @@ The API returns an array of dict where each row is a measure and the dict has th
 - `probe_temp`: if a probe is connected, returns the temperature measured
 
 ### Example of Usage
-`obs=device1.getObservation(3)`
-`print obs[1]["ambien_temp]"`
+
+`from pylacrossapi import lacrosse
+
+    device_id = 02839203
+    unit_measure = 1
+    time_zone = 37
+    device1 = lacrosse(device_id,unit_measure,time_zone)
+
+    obs=device1.getObservation(3)`
+    #Returns the last three observation
+
+    print obs[1]["ambient_temp"]
+    #Prints the second observation Temperature
 
 
