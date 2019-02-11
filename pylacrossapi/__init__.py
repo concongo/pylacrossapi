@@ -1,5 +1,5 @@
-import urllib
-import urllib2
+from urllib import request
+from urllib import parse
 import json
 import sys
 
@@ -60,14 +60,14 @@ class lacrosse:
                    'metric':self.__metric,
                    'timezone':self.__timezone
                    }
-        data = urllib.urlencode(params)
+        data = parse.urlencode(params)
 
         if len(data) > 0:
-            req = urllib2.Request(self.__url_base + '?' + data, None, headers)
+            req = request.Request(self.__url_base + '?' + data, None, headers)
         else:
-            req = urllib2.Request(self.__url_base, None, headers)
+            req = request.Request(self.__url_base, None, headers)
 
-        page = urllib2.urlopen(req).read()
+        page = request.urlopen(req).read()
 
         return json.loads(page)["device0"]["obs"]
 
