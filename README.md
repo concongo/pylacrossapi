@@ -86,7 +86,7 @@ The API returns an array of dict where each row is a measure and the dict has th
     time_zone = 37
     device1 = lacrosse(device_id,unit_measure,time_zone)
 
-    obs=device1.getObservation(3)`
+    obs=device1.getObservation(3)
     #Returns the last three observation
 
     print obs[1]["ambient_temp"]
