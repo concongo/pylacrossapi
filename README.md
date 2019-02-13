@@ -14,7 +14,7 @@ Compatible with Python 3
 
 `from pylacrossapi import lacrosse`
 
-`#<device> = lacrosse(<deviceid>,<Temp Unit -- (0) American (1) Metric -->,<timezone>)`
+`<device> = lacrosse(<deviceid>,<Temp Unit -- (0) American (1) Metric -->,<timezone>)`
 
 ### Time Zone codes
 `   "10": 'America/Denver', "4": 'America/Phoenix', "2": 'America/Chicago', "3": 'America/New_York',
@@ -50,10 +50,13 @@ Compatible with Python 3
 
 ### Example
 
-` device_id = 02839203
-  unit_measure = 1
-  time_zone = 37
-  device1 = lacrosse(device_id,unit_measure,time_zone)`
+`device_id = 02839203`
+
+`unit_measure = 1`
+
+`time_zone = 37`
+
+`device1 = lacrosse(device_id,unit_measure,time_zone)`
 
 ### Get Observations
 
