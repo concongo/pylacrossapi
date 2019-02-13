@@ -9,5 +9,5 @@ setup(name='pylacrossapi',
       license='MIT',
       packages=['pylacrossapi'],
       keywords='LA CROSSE MOBILE TX60U-IT API Wrapper',
-      python_requires='>=2.6,<3.5',
+      python_requires='>=2.6,3',
       zip_safe=False)
