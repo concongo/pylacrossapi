@@ -2,7 +2,7 @@
 
 An easy way to monitor your LA CROSSE MOBILE Wireless Temperature and Humidity Sensor
 
-Compatible with Python 2
+Compatible with Python 3
 
 ## Install
 
